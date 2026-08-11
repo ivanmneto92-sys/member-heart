@@ -672,30 +672,13 @@ function Index() {
         </div>
 
         <section className="benefits">
-          {BENEFITS.map((b) => {
-            const isEvento = b.title === "EVENTOS";
-            if (isEvento) {
-              return (
-                <Link
-                  to="/eventos"
-                  className="benefit"
-                  key={b.title}
-                  style={{ cursor: "pointer", textDecoration: "none", color: "inherit" }}
-                >
-                  <div className="benefit-icon"><b.Icon strokeWidth={1.75} /></div>
-                  <h3 className="benefit-title">{b.title}</h3>
-                  <p className="benefit-text">{b.text}</p>
-                </Link>
-              );
-            }
-            return (
-              <div className="benefit" key={b.title}>
-                <div className="benefit-icon"><b.Icon strokeWidth={1.75} /></div>
-                <h3 className="benefit-title">{b.title}</h3>
-                <p className="benefit-text">{b.text}</p>
-              </div>
-            );
-          })}
+          {BENEFITS.map((b) => (
+            <div className="benefit" key={b.title}>
+              <div className="benefit-icon"><b.Icon strokeWidth={1.75} /></div>
+              <h3 className="benefit-title">{b.title}</h3>
+              <p className="benefit-text">{b.text}</p>
+            </div>
+          ))}
         </section>
       </section>
 
