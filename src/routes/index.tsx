@@ -716,14 +716,14 @@ function Index() {
               const benefits = p.benefits?.items ?? [];
               return (
                 <div className={`plano${featured ? " featured" : ""}`} key={p._id}>
-                  <h3 className="plano-name">{p.name.toUpperCase().replace(/-/g, " ")}</h3>
+                  <h3 className="plano-name">{toMasculine(p.name).toUpperCase().replace(/-/g, " ")}</h3>
                   <div className="plano-price">
                     <span className="currency">R$</span>
                     <span className="value">{price ? formatBRL(price.amount) : "—"}</span>
                     <div className="period">{price && price.intervalMonths === 1 ? "por mês" : price ? `a cada ${price.intervalMonths} meses` : ""}</div>
                   </div>
                   <ul className="plano-features">
-                    {benefits.map((f: string) => <li key={f}>{f}</li>)}
+                    {benefits.map((f: string) => <li key={f}>{toMasculine(f)}</li>)}
                   </ul>
                   <a
                     className="plano-cta"
