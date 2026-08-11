@@ -23,8 +23,8 @@ import {
   getUpcomingSportFixtures,
   getRecentSportFixtures,
   getTeamStandings,
-} from "@/server/fixtures.functions";
-import { getFandomPlans, type ApiPlan } from "@/server/plans.functions";
+} from "@/lib/fixtures.functions";
+import { getFandomPlans, type ApiPlan } from "@/lib/plans.functions";
 
 const partnerModules = import.meta.glob("@/assets/parceiros/*.{webp,png,jpg,jpeg}", {
   eager: true,
