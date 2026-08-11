@@ -522,7 +522,7 @@ function Index() {
       <header className="header">
         <div className="logo">
           <div className="logo-mark"><img src={sportLogo} alt="Torcida Organizada do Vasco" /></div>
-          <div className="logo-text text-center mx-0 text-6xl">TORCIDA ORGANIZADA DO VASCO<small>TORCIDA OFICIAL DO VASCO</small></div>
+          <div className="logo-text text-center mx-0 text-6xl">TOV 1944<small>TORCIDA ORGANIZADA DO VASCO</small></div>
         </div>
         <nav className="nav">
           <a className="active" onClick={() => scrollToId("topo")}>Início</a>
@@ -550,7 +550,7 @@ function Index() {
         <img src={torcidaJovem} alt="Brasão da Torcida Organizada do Vasco — Vasco" className="hero-mascot" width={1920} height={1080} fetchPriority="high" decoding="async" />
         <div className="hero-content">
           <span className="hero-tag">A FORÇA CRUZMALTINA</span>
-          <h1>SEJA SÓCIA DA<br />TORCIDA ORGANIZADA DO VASCO</h1>
+          <h1>SEJA SÓCIO DA<br />TORCIDA ORGANIZADA DO VASCO</h1>
           <p>Faça parte da Torcida Organizada do Vasco. Tenha acesso a benefícios exclusivos, descontos em ingressos do Vasco em São Januário, caravanas e experiências únicas com o Gigante da Colina.</p>
           <div className="hero-buttons">
             <a className="btn btn-primary" onClick={() => scrollToId("planos")}>Quero Ser Sócia</a>
@@ -750,7 +750,7 @@ function Index() {
           <div>
             <div className="footer-brand">
               <img src={sportLogo} alt="Torcida Organizada do Vasco" />
-              <div className="footer-logo">TORCIDA ORGANIZADA DO VASCO<small>TORCIDA OFICIAL DO VASCO</small></div>
+              <div className="footer-logo">TOV 1944<small>TORCIDA ORGANIZADA DO VASCO</small></div>
             </div>
             <p className="footer-desc">Programa de sócia da Torcida Organizada do Vasco — torcida oficial do Vasco. Viva o Gigante da Colina, fortaleça a torcida e aproveite vantagens exclusivas.</p>
           </div>
