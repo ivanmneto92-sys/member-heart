@@ -215,12 +215,13 @@ const css = `
   .benefits-band { background: var(--sport-yellow); }
   .benefits { padding: 0 60px 100px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
   .benefit { background: transparent; border: 1px solid var(--sport-red); padding: 32px 24px; text-align: left; transition: all 0.3s; }
-  .benefit:hover { background: var(--sport-red); color: #fff; border-color: var(--sport-red); transform: translateY(-4px); }
-  .benefit:hover .benefit-icon { background: #fff; color: var(--sport-red); }
-  .benefit:hover .benefit-text { color: #fff; }
+  .benefit:hover { background: #f5f5f5; color: #000; border-color: #000; transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+  .benefit:hover .benefit-icon { background: #000; color: #fff; }
+  .benefit:hover .benefit-text { color: #000; }
   .benefit-icon { width: 64px; height: 64px; background: var(--sport-red); color: var(--sport-yellow); display: flex; align-items: center; justify-content: center; margin-bottom: 22px; transition: all 0.3s; border: 2px solid var(--sport-red); position: relative; }
   .benefit-icon::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 4px; background: #1a1a1a; transition: background 0.3s; }
-  .benefit:hover .benefit-icon::after { background: var(--sport-yellow); }
+  .benefit:hover .benefit-icon::after { background: #999; }
+
   .benefit-icon svg { width: 30px; height: 30px; stroke-width: 1.75; }
   .benefit-title { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; margin-bottom: 10px; }
   .benefit-text { font-size: 13px; line-height: 1.6; color: #3a1a00; transition: color 0.3s; }
@@ -671,30 +672,13 @@ function Index() {
         </div>
 
         <section className="benefits">
-          {BENEFITS.map((b) => {
-            const isEvento = b.title === "EVENTOS";
-            if (isEvento) {
-              return (
-                <Link
-                  to="/eventos"
-                  className="benefit"
-                  key={b.title}
-                  style={{ cursor: "pointer", textDecoration: "none", color: "inherit" }}
-                >
-                  <div className="benefit-icon"><b.Icon strokeWidth={1.75} /></div>
-                  <h3 className="benefit-title">{b.title}</h3>
-                  <p className="benefit-text">{b.text}</p>
-                </Link>
-              );
-            }
-            return (
-              <div className="benefit" key={b.title}>
-                <div className="benefit-icon"><b.Icon strokeWidth={1.75} /></div>
-                <h3 className="benefit-title">{b.title}</h3>
-                <p className="benefit-text">{b.text}</p>
-              </div>
-            );
-          })}
+          {BENEFITS.map((b) => (
+            <div className="benefit" key={b.title}>
+              <div className="benefit-icon"><b.Icon strokeWidth={1.75} /></div>
+              <h3 className="benefit-title">{b.title}</h3>
+              <p className="benefit-text">{b.text}</p>
+            </div>
+          ))}
         </section>
       </section>
 
