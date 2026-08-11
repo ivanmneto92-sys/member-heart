@@ -1,6 +1,9 @@
 import { createServerFn } from "@tanstack/react-start";
 
-const SLUG = "filhasdoalmirante";
+// Slug da torcida na Arquibancada de Vantagens.
+// Pode ser sobrescrito por env quando o cadastro da TOV for criado no parceiro.
+const DEFAULT_SLUG = "filhasdoalmirante";
+
 const BASE = "https://api.arquibancadadevantagens.com.br";
 
 export type ApiPlanPrice = {
@@ -33,7 +36,8 @@ export const getFandomPlans = createServerFn({ method: "GET" }).handler(
       return { data: cache.data, error: null };
     }
     try {
-      const res = await fetch(`${BASE}/website/fandoms/${SLUG}`);
+      const slug = process.env["ADV_FANDOM_SLUG"] || DEFAULT_SLUG;
+      const res = await fetch(`${BASE}/website/fandoms/${slug}`);
       if (!res.ok) {
         return { data: [], error: `API error ${res.status}` };
       }
