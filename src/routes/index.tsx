@@ -414,6 +414,25 @@ function pickMonthlyPrice(plan: ApiPlan) {
   return [...plan.prices].sort((a, b) => a.intervalMonths - b.intervalMonths)[0];
 }
 
+/**
+ * A API do parceiro entrega os textos no feminino ("Sócia ...", "associadas").
+ * Normalizamos para o masculino apenas na exibição, sem alterar os dados de origem.
+ */
+function toMasculine(text: string): string {
+  if (!text) return "";
+  return text
+    .replace(/Sócias/g, "Sócios")
+    .replace(/sócias/g, "sócios")
+    .replace(/SÓCIAS/g, "SÓCIOS")
+    .replace(/Sócia/g, "Sócio")
+    .replace(/sócia/g, "sócio")
+    .replace(/SÓCIA/g, "SÓCIO")
+    .replace(/associadas/gi, (m) => (m === m.toUpperCase() ? "ASSOCIADOS" : "associados"))
+    .replace(/associada/gi, (m) => (m === m.toUpperCase() ? "ASSOCIADO" : "associado"))
+    .replace(/torcedoras/gi, (m) => (m === m.toUpperCase() ? "TORCEDORES" : "torcedores"))
+    .replace(/torcedora/gi, (m) => (m === m.toUpperCase() ? "TORCEDOR" : "torcedor"));
+}
+
 const BENEFITS = [
   { Icon: Handshake, title: "REDE DE PARCEIROS", text: "Empresas parceiras com descontos especiais em diversos setores para sócios da Torcida Organizada do Vasco." },
   { Icon: ShoppingBag, title: "LOJA OFICIAL", text: "Desconto em produtos oficiais e em lojas credenciadas pela torcida." },
