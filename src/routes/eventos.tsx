@@ -1,22 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowLeft, CalendarDays, MapPin, Clock, Ticket } from "lucide-react";
-import logo from "@/assets/filhas-do-almirante-logo-transparent.png";
+import logo from "@/assets/tov-logo-transparent.png";
 import eventoBanner from "@/assets/evento-filhas-do-almirante.png";
 
 export const Route = createFileRoute("/eventos")({
   head: () => ({
     meta: [
-      { title: "Eventos — Filhas do Almirante" },
+      { title: "Eventos — Torcida Organizada do Vasco" },
       {
         name: "description",
         content:
-          "Confira todos os eventos, festas e encontros da Filhas do Almirante.",
+          "Confira todos os eventos, festas e encontros da Torcida Organizada do Vasco.",
       },
-      { property: "og:title", content: "Eventos — Filhas do Almirante" },
+      { property: "og:title", content: "Eventos — Torcida Organizada do Vasco" },
       {
         property: "og:description",
         content:
-          "Confira todos os eventos, festas e encontros da Filhas do Almirante.",
+          "Confira todos os eventos, festas e encontros da Torcida Organizada do Vasco.",
       },
     ],
   }),
@@ -38,7 +38,7 @@ type Evento = {
 const EVENTOS: Evento[] = [
   {
     id: "filhas-do-almirante-a-festa",
-    titulo: "Filhas do Almirante — A Festa",
+    titulo: "Torcida Organizada do Vasco — A Festa",
     data: "06 de Junho",
     horario: "18h",
     local: "Santo Cristo",
@@ -105,8 +105,8 @@ function EventosPage() {
 
       <div className="ev-top">
         <div className="ev-brand">
-          <img src={logo} alt="Filhas do Almirante" />
-          <span>FILHAS DO ALMIRANTE</span>
+          <img src={logo} alt="Torcida Organizada do Vasco" />
+          <span>TORCIDA ORGANIZADA DO VASCO</span>
         </div>
         <Link to="/" className="ev-back">
           <ArrowLeft size={16} /> Voltar
@@ -119,7 +119,7 @@ function EventosPage() {
         <div className="ev-divider" />
         <p className="ev-lead">
           Confira todos os eventos, festas, encontros e ações da{" "}
-          <strong>Filhas do Almirante</strong>. Vem viver o Vasco com a gente.
+          <strong>Torcida Organizada do Vasco</strong>. Vem viver o Vasco com a gente.
         </p>
       </section>
 

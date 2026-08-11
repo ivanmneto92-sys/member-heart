@@ -15,8 +15,8 @@ import {
   ChevronRight,
   Instagram,
 } from "lucide-react";
-import sportLogo from "@/assets/filhas-do-almirante-logo.png";
-import torcidaJovem from "@/assets/filhas-do-almirante-logo.png";
+import sportLogo from "@/assets/tov-logo.png";
+import torcidaJovem from "@/assets/tov-logo.png";
 import arquibancadaLogo from "@/assets/arquibancada-vantagens.png";
 import {
   getNextSportFixture,
@@ -78,17 +78,17 @@ export const Route = createFileRoute("/")({
       : null;
     return {
       meta: [
-        { title: "Filhas do Almirante — Torcida Oficial do Vasco | Programa de Sócia" },
+        { title: "Torcida Organizada do Vasco — Torcida Oficial do Vasco | Programa de Sócia" },
         {
           name: "description",
           content:
-            "Seja sócia da Filhas do Almirante, torcida oficial do Vasco. Descontos em ingressos de São Januário, parceiros, caravanas, telemedicina e experiências exclusivas para o cruzmaltino.",
+            "Seja sócia da Torcida Organizada do Vasco, torcida oficial do Vasco. Descontos em ingressos de São Januário, parceiros, caravanas, telemedicina e experiências exclusivas para o cruzmaltino.",
         },
-        { property: "og:title", content: "Filhas do Almirante — Torcida Oficial do Vasco" },
+        { property: "og:title", content: "Torcida Organizada do Vasco — Torcida Oficial do Vasco" },
         {
           property: "og:description",
           content:
-            "Programa de sócia da Filhas do Almirante: ingressos do Vasco com desconto, rede de parceiros, caravanas e benefícios exclusivos para a torcida cruzmaltina.",
+            "Programa de sócia da Torcida Organizada do Vasco: ingressos do Vasco com desconto, rede de parceiros, caravanas e benefícios exclusivos para a torcida cruzmaltina.",
         },
         { property: "og:url", content: `${SITE_URL}/` },
       ],
@@ -106,14 +106,14 @@ export const Route = createFileRoute("/")({
           children: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SportsOrganization",
-            name: "Filhas do Almirante — Torcida Oficial do Vasco",
-            alternateName: "Torcida Filhas do Almirante",
+            name: "Torcida Organizada do Vasco — Torcida Oficial do Vasco",
+            alternateName: "Torcida Torcida Organizada do Vasco",
             url: SITE_URL,
             logo: `${SITE_URL}/favicon.ico`,
             sport: "Soccer",
             areaServed: "Rio de Janeiro, Brasil",
             description:
-              "Programa de sócia da Filhas do Almirante — torcida oficial do Vasco.",
+              "Programa de sócia da Torcida Organizada do Vasco — torcida oficial do Vasco.",
           }),
         },
         ...(sportsEvent
@@ -419,11 +419,11 @@ function pickMonthlyPrice(plan: ApiPlan) {
 }
 
 const BENEFITS = [
-  { Icon: Handshake, title: "REDE DE PARCEIROS", text: "Empresas parceiras com descontos especiais em diversos setores para sócias da Filhas do Almirante." },
+  { Icon: Handshake, title: "REDE DE PARCEIROS", text: "Empresas parceiras com descontos especiais em diversos setores para sócias da Torcida Organizada do Vasco." },
   { Icon: ShoppingBag, title: "LOJA OFICIAL", text: "Desconto em produtos oficiais e em lojas credenciadas pela torcida." },
   { Icon: PlayCircle, title: "CONTEÚDO", text: "App exclusivo com conteúdo, comunicados e bastidores da torcida." },
   { Icon: Bus, title: "CARAVANAS", text: "Vagas garantidas e descontos nas caravanas oficiais para jogos fora de casa." },
-  { Icon: CalendarHeart, title: "EVENTOS", text: "Convites para eventos, encontros e ações da Filhas do Almirante." },
+  { Icon: CalendarHeart, title: "EVENTOS", text: "Convites para eventos, encontros e ações da Torcida Organizada do Vasco." },
 ];
 
 function scrollToId(id: string) {
@@ -521,8 +521,8 @@ function Index() {
 
       <header className="header">
         <div className="logo">
-          <div className="logo-mark"><img src={sportLogo} alt="Filhas do Almirante" /></div>
-          <div className="logo-text text-center mx-0 text-6xl">FILHAS DO ALMIRANTE<small>TORCIDA OFICIAL DO VASCO</small></div>
+          <div className="logo-mark"><img src={sportLogo} alt="Torcida Organizada do Vasco" /></div>
+          <div className="logo-text text-center mx-0 text-6xl">TORCIDA ORGANIZADA DO VASCO<small>TORCIDA OFICIAL DO VASCO</small></div>
         </div>
         <nav className="nav">
           <a className="active" onClick={() => scrollToId("topo")}>Início</a>
@@ -537,7 +537,7 @@ function Index() {
             href="https://www.instagram.com/filhasdoalmirante/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Instagram da Filhas do Almirante"
+            aria-label="Instagram da Torcida Organizada do Vasco"
           >
             <Instagram size={18} strokeWidth={2} />
             <span>Instagram</span>
@@ -547,11 +547,11 @@ function Index() {
 
       <main>
       <section className="hero" id="topo">
-        <img src={torcidaJovem} alt="Brasão da torcida Filhas do Almirante — Vasco" className="hero-mascot" width={1920} height={1080} fetchPriority="high" decoding="async" />
+        <img src={torcidaJovem} alt="Brasão da Torcida Organizada do Vasco — Vasco" className="hero-mascot" width={1920} height={1080} fetchPriority="high" decoding="async" />
         <div className="hero-content">
           <span className="hero-tag">A FORÇA CRUZMALTINA</span>
-          <h1>SEJA SÓCIA DA<br />FILHAS DO ALMIRANTE</h1>
-          <p>Faça parte da Filhas do Almirante. Tenha acesso a benefícios exclusivos, descontos em ingressos do Vasco em São Januário, caravanas e experiências únicas com o Gigante da Colina.</p>
+          <h1>SEJA SÓCIA DA<br />TORCIDA ORGANIZADA DO VASCO</h1>
+          <p>Faça parte da Torcida Organizada do Vasco. Tenha acesso a benefícios exclusivos, descontos em ingressos do Vasco em São Januário, caravanas e experiências únicas com o Gigante da Colina.</p>
           <div className="hero-buttons">
             <a className="btn btn-primary" onClick={() => scrollToId("planos")}>Quero Ser Sócia</a>
             <a className="btn btn-outline hide-mobile" onClick={() => scrollToId("beneficios")}>Conhecer Benefícios</a>
@@ -738,7 +738,7 @@ function Index() {
       <section className="cta-strip">
         <img src={sportLogo} alt="" className="cta-strip-mascot" aria-hidden="true" />
         <div className="cta-strip-text">
-          PRONTA PARA SER FILHA DO ALMIRANTE?
+          PRONTA PARA SER TORCEDOR DA TOV?
           <small>Faça parte da torcida oficial do Vasco</small>
         </div>
         <a className="btn btn-primary" onClick={() => scrollToId("planos")}>Quero Ser Sócia</a>
@@ -749,10 +749,10 @@ function Index() {
         <div className="footer-grid">
           <div>
             <div className="footer-brand">
-              <img src={sportLogo} alt="Filhas do Almirante" />
-              <div className="footer-logo">FILHAS DO ALMIRANTE<small>TORCIDA OFICIAL DO VASCO</small></div>
+              <img src={sportLogo} alt="Torcida Organizada do Vasco" />
+              <div className="footer-logo">TORCIDA ORGANIZADA DO VASCO<small>TORCIDA OFICIAL DO VASCO</small></div>
             </div>
-            <p className="footer-desc">Programa de sócia da Filhas do Almirante — torcida oficial do Vasco. Viva o Gigante da Colina, fortaleça a torcida e aproveite vantagens exclusivas.</p>
+            <p className="footer-desc">Programa de sócia da Torcida Organizada do Vasco — torcida oficial do Vasco. Viva o Gigante da Colina, fortaleça a torcida e aproveite vantagens exclusivas.</p>
           </div>
           <div className="footer-col">
             <h4>Institucional</h4>
@@ -777,7 +777,7 @@ function Index() {
           </div>
         </div>
         <div className="footer-bottom">
-          <div>© 2026 TORCIDA FILHAS DO ALMIRANTE — VASCO</div>
+          <div>© 2026 TORCIDA TORCIDA ORGANIZADA DO VASCO — VASCO</div>
           <div className="partner-of">
             <span>Empresa parceira da:</span>
             <img src={arquibancadaLogo} alt="Arquibancada de Vantagens" />

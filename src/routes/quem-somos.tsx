@@ -8,18 +8,18 @@ import {
   Sparkles,
   ArrowLeft,
 } from "lucide-react";
-import logo from "@/assets/filhas-do-almirante-logo-transparent.png";
+import logo from "@/assets/tov-logo-transparent.png";
 
 export const Route = createFileRoute("/quem-somos")({
   head: () => ({
     meta: [
-      { title: "Quem Somos — Filhas do Almirante" },
+      { title: "Quem Somos — Torcida Organizada do Vasco" },
       {
         name: "description",
         content:
-          "Conheça a Filhas do Almirante, torcida organizada exclusivamente feminina do Vasco da Gama. Nossa história, missão e propósito.",
+          "Conheça a Torcida Organizada do Vasco, torcida organizada exclusivamente feminina do Vasco da Gama. Nossa história, missão e propósito.",
       },
-      { property: "og:title", content: "Quem Somos — Filhas do Almirante" },
+      { property: "og:title", content: "Quem Somos — Torcida Organizada do Vasco" },
       {
         property: "og:description",
         content:
@@ -108,8 +108,8 @@ function QuemSomosPage() {
 
       <div className="qs-page-top">
         <div className="qs-top-brand">
-          <img src={logo} alt="Filhas do Almirante" />
-          <span>FILHAS DO ALMIRANTE</span>
+          <img src={logo} alt="Torcida Organizada do Vasco" />
+          <span>TORCIDA ORGANIZADA DO VASCO</span>
         </div>
         <Link to="/" className="qs-back">
           <ArrowLeft size={16} /> Voltar
@@ -117,12 +117,12 @@ function QuemSomosPage() {
       </div>
 
       <section className="qs-hero">
-        <img src={logo} alt="Logo Filhas do Almirante" className="qs-hero-logo" />
+        <img src={logo} alt="Logo Torcida Organizada do Vasco" className="qs-hero-logo" />
         <div className="qs-eyebrow">COISAS QUE VOCÊ PROVAVELMENTE NÃO SABE</div>
         <h1 className="qs-title">QUEM SOMOS</h1>
         <div className="qs-divider"></div>
         <p className="qs-lead">
-          A <strong>Filhas do Almirante</strong> é uma torcida organizada{" "}
+          A <strong>Torcida Organizada do Vasco</strong> é uma torcida organizada{" "}
           <strong>exclusivamente feminina</strong> do Vasco da Gama. Nascemos
           para somar, dar voz e abrir caminho — dentro e fora de campo.
         </p>
@@ -225,7 +225,7 @@ function QuemSomosPage() {
       </section>
 
       <div className="qs-cta">
-        <h3>QUERO SER UMA FILHA DO ALMIRANTE!</h3>
+        <h3>QUERO SER UMA TORCEDOR DA TOV!</h3>
         <p>
           Entre em contato pelo número abaixo, receba informações sobre
           associação e faça parte dessa torcida incrível!
