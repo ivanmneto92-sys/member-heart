@@ -261,7 +261,7 @@ const css = `
   .footer-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
   .footer-brand img { width: 52px; height: 52px; object-fit: contain; background: var(--sport-yellow); padding: 4px; border-radius: 50%; }
   .footer-logo { font-family: 'Bebas Neue', sans-serif; font-size: 28px; letter-spacing: 3px; }
-  .footer-logo small { display: block; font-size: 10px; letter-spacing: 4px; color: var(--sport-red); font-family: 'Inter', sans-serif; font-weight: 700; margin-top: 2px; }
+  .footer-logo small { display: block; font-size: 10px; letter-spacing: 4px; color: #fff; font-family: 'Inter', sans-serif; font-weight: 700; margin-top: 2px; }
   .footer-desc { font-size: 13px; line-height: 1.7; opacity: 0.7; max-width: 320px; }
   .footer-col h4 { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 22px; font-weight: 700; color: var(--sport-yellow); }
   .footer-col a { display: block; color: #fff; text-decoration: none; font-size: 13px; margin-bottom: 12px; opacity: 0.7; }
