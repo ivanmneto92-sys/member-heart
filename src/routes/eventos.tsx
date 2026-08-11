@@ -44,7 +44,7 @@ const EVENTOS: Evento[] = [
     local: "Santo Cristo",
     endereco: "Rua Nabuco de Freitas, 73 — Santo Cristo, Rio de Janeiro",
     descricao:
-      "A primeira grande festa da torcida. Música, integração e muita energia cruzmaltina feminina. Vem celebrar com a gente!",
+      "A primeira grande festa da torcida. Música, integração e muita energia cruzmaltina. Vem celebrar com a gente!",
     banner: eventoBanner,
     link: "https://www.sympla.com.br/filhas-do-almirante---a-festa__3358755",
   },

@@ -77,17 +77,17 @@ export const Route = createFileRoute("/")({
       : null;
     return {
       meta: [
-        { title: "Torcida Organizada do Vasco — Torcida Oficial do Vasco | Programa de Sócia" },
+        { title: "Torcida Organizada do Vasco — Torcida Oficial do Vasco | Programa de Sócio" },
         {
           name: "description",
           content:
-            "Seja sócia da Torcida Organizada do Vasco, torcida oficial do Vasco. Descontos em ingressos de São Januário, parceiros, caravanas, telemedicina e experiências exclusivas para o cruzmaltino.",
+            "Seja sócio da Torcida Organizada do Vasco, torcida oficial do Vasco. Descontos em ingressos de São Januário, parceiros, caravanas, telemedicina e experiências exclusivas para o cruzmaltino.",
         },
         { property: "og:title", content: "Torcida Organizada do Vasco — Torcida Oficial do Vasco" },
         {
           property: "og:description",
           content:
-            "Programa de sócia da Torcida Organizada do Vasco: ingressos do Vasco com desconto, rede de parceiros, caravanas e benefícios exclusivos para a torcida cruzmaltina.",
+            "Programa de sócio da Torcida Organizada do Vasco: ingressos do Vasco com desconto, rede de parceiros, caravanas e benefícios exclusivos para a torcida cruzmaltina.",
         },
         { property: "og:url", content: `${SITE_URL}/` },
       ],
@@ -112,7 +112,7 @@ export const Route = createFileRoute("/")({
             sport: "Soccer",
             areaServed: "Rio de Janeiro, Brasil",
             description:
-              "Programa de sócia da Torcida Organizada do Vasco — torcida oficial do Vasco.",
+              "Programa de sócio da Torcida Organizada do Vasco — torcida oficial do Vasco.",
           }),
         },
         ...(sportsEvent
@@ -415,7 +415,7 @@ function pickMonthlyPrice(plan: ApiPlan) {
 }
 
 const BENEFITS = [
-  { Icon: Handshake, title: "REDE DE PARCEIROS", text: "Empresas parceiras com descontos especiais em diversos setores para sócias da Torcida Organizada do Vasco." },
+  { Icon: Handshake, title: "REDE DE PARCEIROS", text: "Empresas parceiras com descontos especiais em diversos setores para sócios da Torcida Organizada do Vasco." },
   { Icon: ShoppingBag, title: "LOJA OFICIAL", text: "Desconto em produtos oficiais e em lojas credenciadas pela torcida." },
   { Icon: PlayCircle, title: "CONTEÚDO", text: "App exclusivo com conteúdo, comunicados e bastidores da torcida." },
   { Icon: Bus, title: "CARAVANAS", text: "Vagas garantidas e descontos nas caravanas oficiais para jogos fora de casa." },
@@ -539,7 +539,7 @@ function Index() {
           <h1>SEJA SÓCIO DA<br />TORCIDA ORGANIZADA DO VASCO</h1>
           <p>Faça parte da Torcida Organizada do Vasco. Tenha acesso a benefícios exclusivos, descontos em ingressos do Vasco em São Januário, caravanas e experiências únicas com o Gigante da Colina.</p>
           <div className="hero-buttons">
-            <a className="btn btn-primary" onClick={() => scrollToId("planos")}>Quero Ser Sócia</a>
+            <a className="btn btn-primary" onClick={() => scrollToId("planos")}>Quero Ser Sócio</a>
             <a className="btn btn-outline hide-mobile" onClick={() => scrollToId("beneficios")}>Conhecer Benefícios</a>
             <Link to="/quem-somos" className="btn btn-outline show-mobile">Quem Somos</Link>
           </div>
@@ -638,7 +638,7 @@ function Index() {
           <div className="section-eyebrow partners-eyebrow">DESCONTOS EXCLUSIVOS</div>
           <h2 className="section-title partners-title">EMPRESAS PARCEIRAS</h2>
           <div className="section-divider partners-divider"></div>
-          <p className="partners-sub">Marcas que oferecem benefícios reais para as associadas.</p>
+          <p className="partners-sub">Marcas que oferecem benefícios reais para os associados.</p>
 
           <PartnersCarousel />
         </div>
@@ -647,7 +647,7 @@ function Index() {
       <section className="benefits-band">
         <div className="section-header" id="beneficios">
           <div className="section-eyebrow">VANTAGENS EXCLUSIVAS</div>
-          <h2 className="section-title">BENEFÍCIOS DA SÓCIA</h2>
+          <h2 className="section-title">BENEFÍCIOS DO SÓCIO</h2>
           <div className="section-divider"></div>
         </div>
 
@@ -683,7 +683,7 @@ function Index() {
       <section className="planos-section" id="planos">
         <div className="section-header">
           <div className="section-eyebrow">ESCOLHA O SEU</div>
-          <h2 className="section-title">PLANOS DE SÓCIA</h2>
+          <h2 className="section-title">PLANOS DE SÓCIO</h2>
           <div className="section-divider"></div>
         </div>
 
@@ -727,7 +727,7 @@ function Index() {
           PRONTA PARA SER TORCEDOR DA TOV?
           <small>Faça parte da torcida oficial do Vasco</small>
         </div>
-        <a className="btn btn-primary" onClick={() => scrollToId("planos")}>Quero Ser Sócia</a>
+        <a className="btn btn-primary" onClick={() => scrollToId("planos")}>Quero Ser Sócio</a>
       </section>
       </main>
 
@@ -738,7 +738,7 @@ function Index() {
               <img src={sportLogo} alt="Torcida Organizada do Vasco" />
               <div className="footer-logo">TOV 1944<small>TORCIDA ORGANIZADA DO VASCO</small></div>
             </div>
-            <p className="footer-desc">Programa de sócia da Torcida Organizada do Vasco — torcida oficial do Vasco. Viva o Gigante da Colina, fortaleça a torcida e aproveite vantagens exclusivas.</p>
+            <p className="footer-desc">Programa de sócio da Torcida Organizada do Vasco — torcida oficial do Vasco. Viva o Gigante da Colina, fortaleça a torcida e aproveite vantagens exclusivas.</p>
           </div>
           <div className="footer-col">
             <h4>Institucional</h4>

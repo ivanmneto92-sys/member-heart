@@ -187,7 +187,7 @@ function QuemSomosPage() {
             <h3 className="qs-card-title">O QUE VOCÊ VAI ENCONTRAR COM A GENTE</h3>
           </div>
           <ul className="qs-list">
-            <li>Integração em grupos de associadas e regiões</li>
+            <li>Integração em grupos de associados e regiões</li>
             <li>Eventos culturais</li>
             <li>Rodas de conversa</li>
             <li>Ações sociais</li>

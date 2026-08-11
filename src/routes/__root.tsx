@@ -29,14 +29,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sócia Torcida Organizada do Vasco" },
+      { title: "Sócio Torcida Organizada do Vasco" },
       {
         name: "description",
         content:
           "Programa de sócio da Torcida Organizada do Vasco (TOV 1944). Ingressos com desconto, parceiros, caravanas e benefícios exclusivos para o cruzmaltino.",
       },
       { property: "og:site_name", content: "Torcida Organizada do Vasco — TOV 1944" },
-      { property: "og:title", content: "Sócia Torcida Organizada do Vasco" },
+      { property: "og:title", content: "Sócio Torcida Organizada do Vasco" },
       {
         property: "og:description",
         content:
@@ -45,7 +45,7 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Sócia Torcida Organizada do Vasco" },
+      { name: "twitter:title", content: "Sócio Torcida Organizada do Vasco" },
       {
         name: "twitter:description",
         content:
