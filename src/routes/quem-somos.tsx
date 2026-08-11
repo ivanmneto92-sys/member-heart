@@ -233,7 +233,7 @@ function QuemSomosPage() {
         <div className="qs-cta-actions">
           <a
             className="qs-btn-wa"
-            href="https://wa.me/5521969227647?text=Ol%C3%A1!%20Quero%20ser%20uma%20Filha%20do%20Almirante"
+            href="https://wa.me/5521969227647?text=Ol%C3%A1!%20Quero%20ser%20da%20TOV"
             target="_blank"
             rel="noopener noreferrer"
           >
