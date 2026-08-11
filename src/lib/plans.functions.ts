@@ -36,7 +36,8 @@ export const getFandomPlans = createServerFn({ method: "GET" }).handler(
       return { data: cache.data, error: null };
     }
     try {
-      const res = await fetch(`${BASE}/website/fandoms/${SLUG}`);
+      const slug = process.env["ADV_FANDOM_SLUG"] || DEFAULT_SLUG;
+      const res = await fetch(`${BASE}/website/fandoms/${slug}`);
       if (!res.ok) {
         return { data: [], error: `API error ${res.status}` };
       }
