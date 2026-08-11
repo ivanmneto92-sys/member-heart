@@ -29,39 +29,40 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sócia Filhas do Almirante" },
+      { title: "Sócia Torcida Organizada do Vasco" },
       {
         name: "description",
         content:
-          "Programa de sócio da Galo Chopp, torcida oficial do CRB em Maceió. Ingressos com desconto, parceiros, caravanas e benefícios exclusivos para o rubro-negro alagoano.",
+          "Programa de sócio da Torcida Organizada do Vasco (TOV 1944). Ingressos com desconto, parceiros, caravanas e benefícios exclusivos para o cruzmaltino.",
       },
-      { property: "og:site_name", content: "Galo Chopp — Torcida Oficial do CRB" },
-      { property: "og:title", content: "Sócia Filhas do Almirante" },
+      { property: "og:site_name", content: "Torcida Organizada do Vasco — TOV 1944" },
+      { property: "og:title", content: "Sócia Torcida Organizada do Vasco" },
       {
         property: "og:description",
         content:
-          "Seja sócio da torcida Galo Chopp e aproveite ingressos do CRB com desconto, parceiros, caravanas e experiências exclusivas no Estádio Rei Pelé.",
+          "Seja sócio da TOV e aproveite ingressos do Vasco com desconto, parceiros, caravanas e experiências exclusivas em São Januário.",
       },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Sócia Filhas do Almirante" },
+      { name: "twitter:title", content: "Sócia Torcida Organizada do Vasco" },
       {
         name: "twitter:description",
         content:
-          "Programa de sócio da Galo Chopp: ingressos do CRB com desconto, parceiros, caravanas e benefícios exclusivos.",
+          "Programa de sócio da TOV: ingressos do Vasco com desconto, parceiros, caravanas e benefícios exclusivos.",
       },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d9810430-e7a7-481e-94b7-b3bd7f807dba/id-preview-6a512055--af96c6b1-71c2-400f-b0f4-d938fc7d3a28.lovable.app-1779281206961.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d9810430-e7a7-481e-94b7-b3bd7f807dba/id-preview-6a512055--af96c6b1-71c2-400f-b0f4-d938fc7d3a28.lovable.app-1779281206961.png" },
-      { name: "description", content: "Sócio Filhas do Almirante is a membership portal for fans, managing subscriptions and benefits." },
-      { property: "og:description", content: "Sócio Filhas do Almirante is a membership portal for fans, managing subscriptions and benefits." },
-      { name: "twitter:description", content: "Sócio Filhas do Almirante is a membership portal for fans, managing subscriptions and benefits." },
+      { name: "description", content: "Portal de sócio da Torcida Organizada do Vasco (TOV 1944) com assinaturas e benefícios." },
+      { property: "og:description", content: "Portal de sócio da Torcida Organizada do Vasco (TOV 1944) com assinaturas e benefícios." },
+      { name: "twitter:description", content: "Portal de sócio da Torcida Organizada do Vasco (TOV 1944) com assinaturas e benefícios." },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
     ],
     scripts: [
       {
@@ -69,8 +70,8 @@ export const Route = createRootRoute({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Galo Chopp — Torcida Oficial do CRB",
-          url: "https://galochopp.socioadv.com.br",
+          name: "Torcida Organizada do Vasco — TOV 1944",
+          url: "https://filhasdoalmirante.socioadv.com.br",
           inLanguage: "pt-BR",
         }),
       },
