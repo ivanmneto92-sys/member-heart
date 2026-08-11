@@ -44,7 +44,7 @@ const PARTNERS = Object.entries(partnerModules)
   })
   .sort((a, b) => a.name.localeCompare(b.name));
 
-const SITE_URL = "https://galochopp.socioadv.com.br";
+const SITE_URL = "https://filhasdoalmirante.socioadv.com.br";
 
 export const Route = createFileRoute("/")({
   loader: async () => {
