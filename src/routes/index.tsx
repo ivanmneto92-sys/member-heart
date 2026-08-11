@@ -13,7 +13,6 @@ import {
   CalendarHeart,
   ChevronLeft,
   ChevronRight,
-  Instagram,
 } from "lucide-react";
 import sportLogo from "@/assets/tov-logo.png";
 import torcidaJovem from "@/assets/tov-logo.png";
