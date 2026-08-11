@@ -13,7 +13,6 @@ import {
   CalendarHeart,
   ChevronLeft,
   ChevronRight,
-  Instagram,
 } from "lucide-react";
 import sportLogo from "@/assets/tov-logo.png";
 import torcidaJovem from "@/assets/tov-logo.png";
@@ -146,9 +145,6 @@ const css = `
   .nav a { color: #000; text-decoration: none; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; position: relative; }
   .nav a.active::after { content: ''; position: absolute; bottom: -8px; left: 0; right: 0; height: 3px; background: var(--sport-red); }
   .nav a:hover { color: var(--sport-red); }
-  .nav-instagram { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff !important; border-radius: 999px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; font-weight: 700; transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; }
-  .nav-instagram:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(220, 39, 67, 0.4); color: #fff !important; }
-  .nav-instagram::after { display: none !important; }
 
   .quem-somos-band { background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%); color: #fff; padding: 90px 60px 100px; position: relative; overflow: hidden; }
   .quem-somos-band::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.06), transparent 60%); pointer-events: none; }
@@ -532,16 +528,6 @@ function Index() {
           <a onClick={() => scrollToId("beneficios")}>Benefícios</a>
           <a onClick={() => scrollToId("parceiros")}>Parceiros</a>
           <a onClick={() => scrollToId("contato")}>Contato</a>
-          <a
-            className="nav-instagram"
-            href="https://www.instagram.com/filhasdoalmirante/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram da Torcida Organizada do Vasco"
-          >
-            <Instagram size={18} strokeWidth={2} />
-            <span>Instagram</span>
-          </a>
         </nav>
       </header>
 
