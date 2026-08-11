@@ -77,8 +77,6 @@ function QuemSomosPage() {
         .qs-cta-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
         .qs-btn-wa { background: #25D366; color: #fff; padding: 14px 26px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; letter-spacing: 1px; font-size: 14px; transition: transform 0.2s; }
         .qs-btn-wa:hover { transform: translateY(-2px); color: #fff; }
-        .qs-btn-ig { background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: #fff; padding: 14px 26px; border-radius: 999px; display: inline-flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; letter-spacing: 1px; font-size: 14px; transition: transform 0.2s; }
-        .qs-btn-ig:hover { transform: translateY(-2px); color: #fff; }
 
         @media (max-width: 768px) {
           .qs-page-top { padding: 14px 16px; }
@@ -101,7 +99,7 @@ function QuemSomosPage() {
           .qs-cta h3 { font-size: 26px; letter-spacing: 2px; line-height: 1.05; }
           .qs-cta p { font-size: 14px; }
           .qs-cta-actions { flex-direction: column; gap: 10px; align-items: stretch; }
-          .qs-btn-wa, .qs-btn-ig { justify-content: center; padding: 13px 18px; font-size: 13px; letter-spacing: 0.5px; }
+          .qs-btn-wa { justify-content: center; padding: 13px 18px; font-size: 13px; letter-spacing: 0.5px; }
         }
       `}</style>
 
@@ -237,14 +235,6 @@ function QuemSomosPage() {
             rel="noopener noreferrer"
           >
             WhatsApp (21) 96922-7647
-          </a>
-          <a
-            className="qs-btn-ig"
-            href="https://www.instagram.com/filhasdoalmirante/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Instagram size={18} /> @filhasdoalmirante
           </a>
         </div>
       </div>
