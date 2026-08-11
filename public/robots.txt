@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://galochopp.socioadv.com.br/sitemap.xml
