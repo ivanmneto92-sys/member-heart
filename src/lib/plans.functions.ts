@@ -1,6 +1,9 @@
 import { createServerFn } from "@tanstack/react-start";
 
-const SLUG = "filhasdoalmirante";
+// Slug da torcida na Arquibancada de Vantagens.
+// Pode ser sobrescrito por env quando o cadastro da TOV for criado no parceiro.
+const DEFAULT_SLUG = "filhasdoalmirante";
+
 const BASE = "https://api.arquibancadadevantagens.com.br";
 
 export type ApiPlanPrice = {
