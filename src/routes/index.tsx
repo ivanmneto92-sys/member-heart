@@ -531,16 +531,6 @@ function Index() {
           <a onClick={() => scrollToId("beneficios")}>Benefícios</a>
           <a onClick={() => scrollToId("parceiros")}>Parceiros</a>
           <a onClick={() => scrollToId("contato")}>Contato</a>
-          <a
-            className="nav-instagram"
-            href="https://www.instagram.com/filhasdoalmirante/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram da Torcida Organizada do Vasco"
-          >
-            <Instagram size={18} strokeWidth={2} />
-            <span>Instagram</span>
-          </a>
         </nav>
       </header>
 
