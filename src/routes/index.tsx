@@ -107,9 +107,9 @@ export const Route = createFileRoute("/")({
             "@context": "https://schema.org",
             "@type": "SportsOrganization",
             name: "Torcida Organizada do Vasco — Torcida Oficial do Vasco",
-            alternateName: "Torcida Torcida Organizada do Vasco",
+            alternateName: "TOV 1944",
             url: SITE_URL,
-            logo: `${SITE_URL}/favicon.ico`,
+            logo: `${SITE_URL}/favicon.png`,
             sport: "Soccer",
             areaServed: "Rio de Janeiro, Brasil",
             description:
@@ -777,7 +777,7 @@ function Index() {
           </div>
         </div>
         <div className="footer-bottom">
-          <div>© 2026 TORCIDA TORCIDA ORGANIZADA DO VASCO — VASCO</div>
+          <div>© 2026 TORCIDA ORGANIZADA DO VASCO — TOV 1944</div>
           <div className="partner-of">
             <span>Empresa parceira da:</span>
             <img src={arquibancadaLogo} alt="Arquibancada de Vantagens" />
